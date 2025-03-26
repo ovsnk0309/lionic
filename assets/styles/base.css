@@ -1,0 +1,69 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.logo {
+  width: 115px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+button {
+  font-family: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.site-button {
+  font-weight: 600;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(49, 114, 185, 1);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.section-offset {
+  padding-top: 87px;
+  padding-bottom: 160px;
+}
+
+/* :focus
+:hover
+:active */
+/* .header__nav-link:focus {
+  outline: none;
+  color: blue;
+} */
+
+.site-button:focus-visible {
+  outline: 1px solid #71a7e2;
+  outline-offset: 3px;
+}
+
+.site-button:hover {
+  background: #71a7e2;
+}
+
+.site-button:active {
+  background: #0e3b6c;
+}
+
