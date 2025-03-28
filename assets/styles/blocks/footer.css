@@ -48,3 +48,8 @@
 .footer__icons-link--stroke:hover path {
   stroke: #71a7e2;
 }
+
+.footer__icons-link:focus-visible,
+.footer__nav-link:focus-visible {
+  outline: 1px solid #71a7e2;
+}

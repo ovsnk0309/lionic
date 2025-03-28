@@ -1,5 +1,5 @@
 .services {
-  margin-bottom: 87px;
+  padding-bottom: 87px;
   border-bottom: 1px solid #dadada;
 }
 
@@ -53,11 +53,11 @@
 }
 
 .services__list-item:hover {
-  background-color: #3172B9;
+  background-color: #3172b9;
 }
 
 .services__list-item:hover .services__list-heading,
-.services__list-item:hover .services__list-text  {
+.services__list-item:hover .services__list-text {
   color: white;
 }
 

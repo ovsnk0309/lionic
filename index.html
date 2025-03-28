@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/styles/index.css" />
-    <title>Document</title>
+    <title>Lionic</title>
+    <link
+      rel="shortcut icon"
+      href="assets/img/iconSvg.co.svg"
+      type="image/x-icon"
+    />
   </head>
 
   <!-- Шрифт -->
@@ -24,16 +29,16 @@
                 <a class="header__nav-link" href="#services">Services</a>
               </li>
               <li class="header__nav-item">
-                <a class="header__nav-link" href="">Articles</a>
+                <a class="header__nav-link" href="#articles">Articles</a>
               </li>
               <li class="header__nav-item">
-                <a class="header__nav-link" href="">Clients</a>
+                <a class="header__nav-link" href="#clients">Clients</a>
               </li>
               <li class="header__nav-item">
-                <a class="header__nav-link" href="">Contactss</a>
+                <a class="header__nav-link" href="#contacts">Contacts</a>
               </li>
               <li class="header__nav-item">
-                <a class="header__nav-link" href="">Join us</a>
+                <a class="header__nav-link" href="#join">Join us</a>
               </li>
             </ul>
           </nav>
@@ -155,7 +160,7 @@
         </div>
       </section>
 
-      <section class="articles">
+      <section class="articles" id="articles">
         <div class="container">
           <h2 class="articles__title">Articles</h2>
           <ul class="articles__list">
@@ -165,7 +170,9 @@
                 src="./assets/img/articles/articles-1.jpg"
                 alt=""
               />
-              <span class="articles__span">15 Nov 2021</span>
+              <time class="articles__date" datetime="2021-15-11"
+                >15 Nov 2021</time
+              >
               <h3 class="articles__list-heading">Jurisdiction</h3>
               <p class="articles__list-text">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
@@ -178,7 +185,9 @@
                 src="./assets/img/articles/articles-2.jpg"
                 alt=""
               />
-              <span class="articles__span">28 Nov 2021</span>
+              <time class="articles__date" datetime="2021-28-11"
+                >28 Nov 2021</time
+              >
               <h3 class="articles__list-heading">Consulting</h3>
               <p class="articles__list-text">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
@@ -191,7 +200,9 @@
                 src="./assets/img/articles/articles-3.jpg"
                 alt=""
               />
-              <span class="articles__span">29 Nov 2021</span>
+              <time class="articles__date" datetime="2021-29-11"
+                >29 Nov 2021</time
+              >
               <h3 class="articles__list-heading">Rights and obligations</h3>
               <p class="articles__list-text">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
@@ -217,7 +228,7 @@
         </div>
       </section>
 
-      <section class="clients">
+      <section class="clients" id="clients">
         <div class="container">
           <h2 class="clients__title">Clients</h2>
           <ul class="clients__list">
@@ -282,7 +293,7 @@
         </div>
       </section>
 
-      <section class="contacts section-offset">
+      <section class="contacts section-offset" id="contacts">
         <div class="container">
           <h2 class="contacts__title">Contacts</h2>
           <ul class="contacts__list">
@@ -312,7 +323,7 @@
                 <a href="tel:+79876543210" class="contacts__list-link">
                   +7 (987) 654-32-10
                 </a>
-                <a hre="tel:" class="contacts__list-link">
+                <a href="tel:+71234567890" class="contacts__list-link">
                   +7 (123) 456-78-90
                 </a>
               </div>
@@ -342,7 +353,7 @@
         </div>
       </section>
 
-      <section class="join">
+      <section class="join" id="join">
         <div class="container">
           <h2 class="join__title">Join us</h2>
           <p class="join__text">
@@ -353,18 +364,20 @@
               <input
                 class="join__form-input"
                 type="text"
-                name="name"
+                autocomplete="name"
                 placeholder="Name"
               />
               <input
                 class="join__form-input"
                 type="tel"
-                name="phone"
+                name="tel"
+                id="tel"
                 placeholder="Phone"
               />
               <input
                 class="join__form-input"
                 name="email"
+                id="email"
                 type="email"
                 placeholder="E-mail"
               />

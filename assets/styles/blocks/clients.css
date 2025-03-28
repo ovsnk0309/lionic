@@ -1,4 +1,6 @@
 .clients {
+  padding-top: 87px;
+  padding-bottom: 160px;
   border-bottom: 1px solid #dadada;
 }
 
@@ -15,7 +17,6 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
-  margin-bottom: 160px;
 }
 
 .clients__list-item {

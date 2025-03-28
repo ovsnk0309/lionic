@@ -1,4 +1,5 @@
 .join {
+  padding-top: 87px;
   padding-bottom: 100px;
   border-bottom: 1px solid #dadada;
 }
@@ -9,7 +10,6 @@
   text-align: center;
   color: #1c1c1c;
   margin-bottom: 22px;
-  margin-top: 87px;
 }
 
 .join__text {
@@ -133,13 +133,14 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%) scale(0);
+  translate: -50% -50%;
+  scale: 0;
   margin-top: 1px;
   transition: 0.2s ease-in;
 }
 
 .join__form-check:checked + .join__form-check-custom::before {
-  transform: translate(-50%, -50%) scale(1);
+  scale: 1;
 }
 
 .join__text {
@@ -156,14 +157,21 @@
   margin-left: 5px;
 }
 
+.join__form-input:focus,
+.join__form-select:focus,
+.join__form-message:focus {
+  outline: 1px solid #71a7e2;
+  background: rgba(113, 167, 226, 0.2);
+}
+
 .join__form-input:hover,
 .join__form-select:hover,
 .join__form-message:hover {
   border: 1px solid #71a7e2;
 }
 
-.join__form-input:focus {
-  outline: none;
-  background: rgba(113, 167, 226, 0.2);
-  border: 1px solid #71a7e2;
+.join__form-input:active,
+.join__form-select:active,
+.join__form-message:active {
+  border: 1px solid #0e3b6c;
 }
